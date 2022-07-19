@@ -3,8 +3,7 @@ import '../assets/css/chat.css';
 const Chat = () => {
   return (
     <>
-        <div className="container p-0 my-5">
-            <h1 className="h3 mb-3">Group Chat</h1>
+        <div className="container-fluid p-0">
             <div className="card">
                 <div className="row g-0">
                     <div className="col-12 col-lg-12 col-xl-12">
@@ -147,14 +146,12 @@ const Chat = () => {
 
                             </div>
                         </div>
-
-                        <div className="flex-grow-0 py-3 px-4 border-top">
+                        <div className="flex-grow-0 py-4 px-4 border-top">
                             <div className="input-group">
                                 <input type="text" className="form-control" placeholder="Type your message" />
                                 <button className="btn btn-primary">Send</button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
