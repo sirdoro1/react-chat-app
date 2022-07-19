@@ -13,7 +13,7 @@ const Chat = () => {
 
                                 <div className="chat-message-right pb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:33 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
@@ -24,7 +24,7 @@ const Chat = () => {
 
                                 <div className="chat-message-left pb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150g" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:34 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
@@ -35,7 +35,7 @@ const Chat = () => {
 
                                 <div className="chat-message-right mb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:35 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
@@ -46,7 +46,7 @@ const Chat = () => {
 
                                 <div className="chat-message-left pb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150g" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:36 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
@@ -58,7 +58,7 @@ const Chat = () => {
 
                                 <div className="chat-message-left pb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150g" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:37 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
@@ -69,7 +69,7 @@ const Chat = () => {
 
                                 <div className="chat-message-right mb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:38 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
@@ -80,7 +80,7 @@ const Chat = () => {
 
                                 <div className="chat-message-left pb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150g" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:39 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
@@ -91,7 +91,7 @@ const Chat = () => {
 
                                 <div className="chat-message-right mb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:40 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
@@ -102,7 +102,7 @@ const Chat = () => {
 
                                 <div className="chat-message-right mb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:41 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
@@ -113,7 +113,7 @@ const Chat = () => {
 
                                 <div className="chat-message-left pb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150g" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:42 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
@@ -125,7 +125,7 @@ const Chat = () => {
 
                                 <div className="chat-message-right mb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150" className="rounded-circle mr-1" alt="Chris Wood" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:43 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
@@ -136,7 +136,7 @@ const Chat = () => {
 
                                 <div className="chat-message-left pb-4">
                                     <div>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
+                                        <img src="https://via.placeholder.com/150g" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40"/>
                                         <div className="text-muted small text-nowrap mt-2">2:44 am</div>
                                     </div>
                                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
