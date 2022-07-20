@@ -1,10 +1,15 @@
 import React from "react";
 
 const AccessPage = () => {
-     const handleClick = () =>{
-        console.log(name.current.value);
-     }
-     const name = React.createRef(); 
+    // setting ref to the userName input
+    const userName = React.createRef(); 
+
+    const [name, setName] = React.useState(null);
+
+    const handleClick = () =>{
+        setName(userName.current.value);
+    }
+
   return (
     <>
         <div className="container-fluid">
@@ -15,8 +20,8 @@ const AccessPage = () => {
                             <h5 className="card-title text-center">Access Chat</h5>
                             <form>
                                 <div className="form-group">
-                                    <label htmlFor="exampleInputEmail1">Name</label>
-                                    <input ref={name} type="text" className="form-control" id="name" aria-describedby="name" placeholder="Enter name" />
+                                    <label htmlFor="exampleInputEmail1">Name: {name}</label>
+                                    <input ref={userName} type="text" className="form-control" id="name" aria-describedby="name" placeholder="Enter name" />
                                 </div>
                                 <div className="form-group row p-2">
                                     <button type="button" onClick={handleClick} className="btn btn-primary mt-3 col-md-12">Access Chat</button>
