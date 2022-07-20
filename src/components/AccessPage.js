@@ -1,11 +1,12 @@
 
 const AccessPage = () => {
+     const handleClick = () =>{
+        console.log("clicked");
+     }
   return (
     <>
         <div className="container-fluid">
             <div className="row">
-                {/* center col-md-4 to the vertical center of the page  */}
-
                 <div className="col-md-4 offset-md-4 mt-5">
                     <div className="card">
                         <div className="card-body">
@@ -16,7 +17,7 @@ const AccessPage = () => {
                                     <input type="email" className="form-control" id="name" aria-describedby="name" placeholder="Enter name" />
                                 </div>
                                 <div className="form-group row p-2">
-                                    <button type="submit" className="btn btn-primary mt-3 col-md-12">Access Chat</button>
+                                    <button type="button" onClick={handleClick} className="btn btn-primary mt-3 col-md-12">Access Chat</button>
                                 </div>
                             </form>
                         </div>
