@@ -1,16 +1,25 @@
-// import Header from './components/Header';
-// import Chat from './components/Chat';
+import Header from './components/Header';
+import Chat from './components/Chat';
 import AccessPage from './components/AccessPage';
 
-function App() {
+function App({id, name}) {
   return (
     <div className="container-fliud">
-      <AccessPage />
-      {/* <Header className="App-header" /> */}
-      {/* <AccessPage /> */}
-      {/* <Chat className="App-chat" /> */}
+      {/* if user.id is set display Header and Chat components else display AccessPage component */}
+      {(id == null)?
+        <AccessPage /> :
+        <>
+          <Header className="App-Header"/>
+          <Chat className="App-Chat"/>
+        </>
+      }
     </div>
   );
 }
+
+App.defaultProps = {
+  id: null,
+  name: null
+};
 
 export default App;
