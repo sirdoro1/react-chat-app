@@ -1,10 +1,10 @@
-import React from "react";
+import {React,useState} from "react";
 
 const AccessPage = () => {
     // setting ref to the userName input
     const userName = React.createRef(); 
 
-    const [name, setName] = React.useState(null);
+    const [name, setName] = useState("name", null);
 
     const handleClick = () =>{
         setName(userName.current.value);
