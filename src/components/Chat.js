@@ -1,10 +1,10 @@
 import '../assets/css/chat.css';
-import { useRef } from 'react';
+import { createRef, useState} from 'react';
 
 const Chat = () => {
-    // const [messages, setMessages] = useState([]);
-    const message = useRef(null);
-    const chats = [
+    const message = createRef(null);
+
+    const [chats, setChats] = useState([
         {'id': 1, 'name': 'Chris', 'avatar': 'https://via.placeholder.com/150', 'lastMessage': 'Hello, how are you?', 'lastMessageTime': '2:38 am'},
         {'id': 2, 'name': 'John', 'avatar': 'https://via.placeholder.com/150', 'lastMessage': 'Hi, I am fine', 'lastMessageTime': '2:38 am'},
         {'id': 3, 'name': 'Sara', 'avatar': 'https://via.placeholder.com/150', 'lastMessage': 'Hi, I am fine', 'lastMessageTime': '2:38 am'},
@@ -30,41 +30,39 @@ const Chat = () => {
         {'id': 23, 'name': 'John', 'avatar': 'https://via.placeholder.com/150', 'lastMessage': 'Hi, I am fine', 'lastMessageTime': '2:38 am'},
         {'id': 24, 'name': 'Sara', 'avatar': 'https://via.placeholder.com/150', 'lastMessage': 'Hi, I am fine', 'lastMessageTime': '2:38 am'},
         {'id': 25, 'name': 'Chris', 'avatar': 'https://via.placeholder.com/150', 'lastMessage': 'Hello, how are you?', 'lastMessageTime': '2:38 am'},
-    ];
+    ]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // const message = message.current.value;
-        console.log(e);
-
+        const newMessage = message.current.value;
+        message.current.value = '';
+        setChats([...chats, {'id': chats.length + 1, 'name': 'Sara', 'avatar': 'https://via.placeholder.com/150', 'lastMessage': newMessage, 'lastMessageTime': '2:38 am'}]);
     }
 
-  const messages = chats.map(chat => {
+    const messages = chats.map(chat => {
         return <>
-            {/* if id is odd use .chat-message-right else use .chat-message-left */}
             {chat.id % 2 === 0 ?
                 <div  key={chat.id} className="chat-message-right pb-4">
-                    {/* <div>
+                    <div>
                         <img src="https://via.placeholder.com/150" className="rounded-circle mr-1" alt={chat.name}  width={40} height={40}/>
                         <div className="text-muted small text-nowrap mt-2">{chat.lastMessageTime}</div>
                     </div>
                     <div className="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
                         <div className="font-weight-bold mb-1">You</div>
                         {chat.lastMessage}
-                    </div> */}
+                    </div>
                 </div>
                 :
-                ''
-                // <div key={chat.id} className="chat-message-left pb-4">
-                //     {/* <div>
-                //         <img src="https://via.placeholder.com/150" className="rounded-circle mr-1" alt={chat.name} width={40} height={40}/>
-                //         <div className="text-muted small text-nowrap mt-2">{chat.lastMessageTime}</div>
-                //     </div>
-                //     <div className="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
-                //         <div className="font-weight-bold mb-1">{chat.name}</div>
-                //         {chat.lastMessage}
-                //     </div> */}
-                // </div>
+                <div key={chat.id} className="chat-message-left pb-4">
+                    <div>
+                        <img src="https://via.placeholder.com/150" className="rounded-circle mr-1" alt={chat.name} width={40} height={40}/>
+                        <div className="text-muted small text-nowrap mt-2">{chat.lastMessageTime}</div>
+                    </div>
+                    <div className="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
+                        <div className="font-weight-bold mb-1">{chat.name}</div>
+                        {chat.lastMessage}
+                    </div>
+                </div>
             }
         </>
     }); 
@@ -81,7 +79,7 @@ const Chat = () => {
                         </div>
                         <div className="flex-grow-0 py-4 px-4 border-top">
                             <div className="input-group">
-                                <input type="text" name={message} className="form-control" placeholder="Type your message" />
+                                <input type="text" ref={message} className="form-control" placeholder="Type your message" />
                                 <button className="btn btn-primary" onClick={handleSubmit}>Send</button>
                             </div>
                         </div>
