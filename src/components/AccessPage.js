@@ -4,7 +4,7 @@ const AccessPage = () => {
     // setting ref to the userName input
     const userName = React.createRef(); 
 
-    const [name, setName] = useState("name", null);
+    const [name, setName] = useState(null, null);
 
     const handleClick = () =>{
         setName(userName.current.value);

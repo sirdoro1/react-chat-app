@@ -18,7 +18,7 @@ function App({id, name}) {
 }
 
 App.defaultProps = {
-  id: null,
+  id: 1,
   name: null
 };
 
